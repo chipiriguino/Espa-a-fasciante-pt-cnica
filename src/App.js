@@ -38,6 +38,7 @@ class App extends React.Component {
         <a href="https://portfolio-chipiriguino.herokuapp.com/">CATEGORY</a>
         <a href="https://portfolio-chipiriguino.herokuapp.com/">CATEGORY</a>
       </div>
+      <div className="body">
       <div className="hidden-first"><First title={datos.cover[0].title} summary={datos.cover[0].summary} date={datos.cover[0].date_post} author={datos.cover[0].author.name} category={datos.cover[0].category.name} subcategory={datos.cover[0].subcategory.name} read={datos.cover[0].readtime}></First></div>
 <div className="hidden"><FirstQ image={datos.cover[0].cover_image.url} title={datos.cover[0].title} summary={datos.cover[0].summary} date={datos.cover[0].date_post} author={datos.cover[0].author.name} category={datos.cover[0].category.name} subcategory={datos.cover[0].subcategory.name} read={datos.cover[0].readtime}></FirstQ></div>
 <p className="bottom-line">CATEGORY</p>
@@ -51,18 +52,17 @@ class App extends React.Component {
 <Third image={datos.random[0].cover_image.url} title={datos.random[0].title} summary={datos.random[0].summary} date={datos.random[0].date_post} author={datos.random[0].author.name} cat={datos.random[0].category.name} subcategory={datos.random[0].subcategory.name} read={datos.random[0].readtime}></Third>
 <Third image={datos.random[1].cover_image.url} title={datos.random[1].title} summary={datos.random[1].summary} date={datos.random[1].date_post} author={datos.random[1].author.name} cat={datos.random[1].category.name} subcategory={datos.random[1].subcategory.name} read={datos.random[1].readtime}></Third>
 </div>
+</div>
       <footer>
         <h1>LOGO</h1>
         <div className="footer-ul">
         <ul>
-          <h4>Caterogy</h4>
-          <p>Subcaterogy</p>
-          <p>Subcaterogy</p>
+          <h5>Caterogy</h5>
+          <p>Subcaterogy<br></br>Subcaterogy</p>
         </ul>
         <ul>
-          <h4>Caterogy</h4>
-          <p>Subcaterogy</p>
-          <p>Subcaterogy</p>
+          <h5>Caterogy</h5>
+          <p>Subcaterogy<br></br>Subcaterogy</p>
         </ul>
         </div>
       </footer>

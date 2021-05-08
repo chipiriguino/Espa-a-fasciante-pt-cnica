@@ -1,6 +1,9 @@
+import React from 'react';
 import './App.css';
 import HamburgerMenu from '../src/HamburgerMenu';
-import React from 'react';
+import First from './components/First';
+import Second from './components/Second';
+import Third from './components/Third';
 
 class App extends React.Component {
 	constructor() {
@@ -44,6 +47,33 @@ class App extends React.Component {
         <a href="#">CATEGORY</a>
         <a href="#">CATEGORY</a>
       </div>
+<First></First>
+
+<p className="bottom-line">CATEGORY</p>
+<div className="align-second">
+<Second></Second>
+<Second></Second>
+</div>
+<p className="top-line">READ MORE</p>
+<div>
+<Third></Third>
+<Third></Third>
+</div>
+      <footer>
+        <h1>LOGO</h1>
+        <div className="footer-ul">
+        <ul>
+          <h4>Caterogy</h4>
+          <p>Subcaterogy</p>
+          <p>Subcaterogy</p>
+        </ul>
+        <ul>
+          <h4>Caterogy</h4>
+          <p>Subcaterogy</p>
+          <p>Subcaterogy</p>
+        </ul>
+        </div>
+      </footer>
       </div>
 		);
 	}

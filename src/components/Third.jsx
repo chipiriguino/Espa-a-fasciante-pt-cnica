@@ -13,17 +13,25 @@ export default function Third(props) {
   <Card>
     
   <Card.Text><i className="cat-sub-color"><b>{props.cat}</b> | {props.subcategory}</i></Card.Text>
+  <Card.Text className="title-card font-title-third hidden">
+        {props.title}
+      </Card.Text>
+      <Card.Text className="hidden">
+        {props.summary}
+      </Card.Text>
+
+  
   <Card.Img className="image-third" variant="top" src={props.image } alt="image"  width="50"  />
-  <Card.Text className="title-card font-title-third">
+  <Card.Text className="title-card font-title-third hidden-first">
         {props.title}
       </Card.Text>
 
     <Card.Body>
     
-      <Card.Text>
+      <Card.Text className="hidden-first">
         {props.summary}
       </Card.Text>
-      <Card.Text>
+      <Card.Text className="query-fafa">
       <p className="bold">{props.author}</p>
       <div className="align-fafa">
         <div className="date3-align"><p className="font-size cat-sub-color">{props.date} - <b>{props.read}</b></p></div>

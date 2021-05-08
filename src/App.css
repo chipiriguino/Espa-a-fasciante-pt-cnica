@@ -202,20 +202,8 @@ h6 {
 .image-third {
   height: 160px;
 }
+/* FIRSTQ */
 
-/* 
-MEDIAQUERYS */
-
-@media screen and (max-width: 800px) {
-  .hidden {
-    display: none;
-  }
-}
-@media screen and (min-width: 800px) {
-  .hidden-first {
-    display: none;
-  }
-}
 .cover1 {
   margin-top: 30px;
   margin-left: 10px;
@@ -243,11 +231,37 @@ MEDIAQUERYS */
   flex-direction: row;
 }
 
+
+/* 
+MEDIAQUERYS */
+
+@media screen and (max-width: 800px) {
+  .hidden {
+    display: none;
+  }
+}
 @media screen and (min-width: 800px) {
+  .hidden-first {
+    display: none;
+  }
+  
+}
+@media screen and (min-width: 650px) {
   .align-third {
     display: flex;
     flex-direction: row;
   }
+  .body {
+    margin-left: 2.5rem;
+  }
+  
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+  
   .width-third-card {
     width: 85%;
   }
@@ -260,8 +274,15 @@ MEDIAQUERYS */
   .bottom-line {
     width: 94%;
   }
+ 
   .body {
     margin-left: 2.5rem;
+  }
+  .query-fafa{
+    margin-top: 10px;
+  }
+  .align-fafa{
+    margin-top: 15px;
   }
 }
 @media screen and (min-width: 800px) {
@@ -286,6 +307,13 @@ MEDIAQUERYS */
 }
 @media screen and (min-width: 1200px) {
   .margin-img {
+    width: 55rem;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .margin-img {
     width: 60rem;
   }
 }
+
+

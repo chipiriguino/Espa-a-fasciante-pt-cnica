@@ -6,11 +6,11 @@ export default function First(props) {
         <div>
             
         <div className="cover">
-        <div className="align-category"><h8 className="line">CATEGORY  </h8><h8>SUBCATEGORY</h8></div>
+        <div className="align-category"><h8 className="line">{props.category}  </h8><h8>{props.subcategory}</h8></div>
            <h4>{props.title}</h4>
-           <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
-           <p className="author">Author</p>
-          <div className="align-cover"><div className="date"><p>Date</p><p className="reading-time">reading time</p></div><div ><img className="fb-img" src="/images/facebook.png" width="25" alt="search" /><img  src="/images/share_white.png" width="25" alt="search" /></div></div> 
+           <h6>{props.summary}</h6>
+           <p className="author">{props.author}</p>
+          <div className="align-cover"><div className="date"><p>{props.date}</p><p className="reading-time">{props.read}</p></div><div ><img className="fb-img" src="/images/facebook.png" width="25" alt="search" /><img  src="/images/share_white.png" width="25" alt="search" /></div></div> 
         </div>
         </div>
     )

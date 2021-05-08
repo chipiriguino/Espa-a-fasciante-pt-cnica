@@ -3,7 +3,7 @@ import '../App.css';
 import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/Card';
 
-export default function Second() {
+export default function Second(props) {
     return (
         <div>
             
@@ -11,19 +11,19 @@ export default function Second() {
             <CardDeck className="cards">
                 <div>
   <Card>
-  <Card.Text><p className="cat-sub-color"><b>Category</b><br></br><i className="line-top">Subcategory</i></p></Card.Text>
+  <Card.Text><p className="cat-sub-color"><b>{props.cat}</b><br></br><i className="line-top">{props.subcategory}</i></p></Card.Text>
   <Card.Text>
-        <p className="title-card">This is a wider card with supporting text below as a natural </p>
+        <p className="title-card">{props.title} </p>
       </Card.Text>
-    <Card.Img variant="top" src="http://espanafascinante.com/test/images/01.png" width="25" />
+    <Card.Img variant="top" src={props.image} width="25" />
    
     
       <Card.Text>
-        This is a wider card with supporting text below as a 
+        {props.summary}
       </Card.Text>
       <Card.Text>
-      <p className="bold">Author</p>
-          <div className="date3-align"><p className="font-size cat-sub-color">Date-</p><p className="bold">reading</p></div>
+      <p className="bold">{props.author}</p>
+          <div className="date3-align"><p className="font-size cat-sub-color">{props.date}-</p><p className="bold">{props.read}</p></div>
           <div className="icons-third"><img src="/images/fb-black.png" width="25" alt="search" /><img  src="/images/share-red.png" width="25" alt="search" /></div>
       </Card.Text>
     

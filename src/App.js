@@ -54,7 +54,7 @@ class App extends React.Component {
 <Second></Second>
 <Second></Second>
 </div>
-<p className="top-line">READ MORE</p>
+<p className="top-line">Read more</p>
 <div>
 <Third></Third>
 <Third></Third>

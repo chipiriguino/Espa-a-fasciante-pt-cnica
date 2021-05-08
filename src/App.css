@@ -103,26 +103,65 @@ h6{
 
 /* SECOND */
 .bottom-line{
-  border-bottom: 0.5px solid grey;
+  border-bottom: 0.5px solid #ab2a3e;
   width: 88%;
   margin-left: 20px;
+  margin-top: 15px;
+  font-weight: bold;
+  color:#ab2a3e;
 }
 .top-line{
-  border-top: 0.5px solid grey;
+  border-top: 0.5px solid #ab2a3e;
   width: 88%;
   margin-left: 20px;
   margin-top: 10px;
   display: flex;
   justify-content: flex-end;
+  color:#ab2a3e;
+  font-weight: bold;
 }
-
+.line-top{
+  border-top: 0.5px solid grey;
+}
+.card{
+  border: none !important;
+}
 .cards{
   display: flex;
   flex-direction: row;
   width: 86%;
 }
+
+.card p{
+  margin-bottom: 4px;
+}
 .align-second{
   display: flex;
   flex-direction: row;
   margin-left: 20px;
+}
+.bottom-line-card{
+  border-bottom: 0.5px solid grey;
+  width: 800%;
+}
+.title-card{
+  font-weight: bold;
+}
+.bold{
+  font-weight: bold;
+  color:grey
+}
+.cat-sub-color{
+  color: grey;
+}
+
+/* THIRD */
+
+.date3-align{
+  display: flex;
+  flex-direction: row;
+}
+.icons-third{
+  display: flex;
+  justify-content: flex-end;
 }

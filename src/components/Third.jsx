@@ -12,7 +12,7 @@ export default function Third(props) {
                 <div>
   <Card>
     
-  <Card.Text><i className="cat-sub-color"><b>{props.cat}</b>| {props.subcategory}</i></Card.Text>
+  <Card.Text><i className="cat-sub-color"><b>{props.cat}</b> | {props.subcategory}</i></Card.Text>
   <Card.Img className="image-third" variant="top" src={props.image } alt="image"  width="50"  />
   <Card.Text className="title-card font-title-third">
         {props.title}

@@ -11,7 +11,7 @@ export default function Second(props) {
             <CardDeck className="cards">
                 <div>
   <Card>
-  <Card.Text><p className="cat-sub-color"><b>{props.cat}</b><br></br><i className="line-top">{props.subcategory}</i></p></Card.Text>
+  <Card.Text><p className="cat-sub-color"><b>{props.cat}</b><br></br><hr></hr><i >{props.subcategory}</i></p></Card.Text>
   <Card.Text>
         <p className="title-card">{props.title} </p>
       </Card.Text>
@@ -23,7 +23,7 @@ export default function Second(props) {
       </Card.Text>
       <Card.Text>
       <p className="bold">{props.author}</p>
-          <div className="date3-align"><p className="font-size cat-sub-color">{props.date}-</p><p className="bold">{props.read}</p></div>
+          <div className="date3-align"><p className="font-size cat-color">{props.date}-</p><p className="bold">{props.read}</p></div>
           <div className="icons-third"><img src="/images/fb-black.png" width="25" alt="search" /><img  src="/images/share-red.png" width="25" alt="search" /></div>
       </Card.Text>
     

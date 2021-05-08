@@ -6,7 +6,7 @@ export default function FirstQ(props) {
         <div className="align-cover1">
             
         <div className="cover1">
-        <div className="align-category"><h6 className="line">{props.category} | {props.subcategory}</h6></div>
+        <div className="align-category"><h6 className="line"><b>{props.category}</b> | {props.subcategory}</h6></div>
            <h4>{props.title}</h4>
            <h6>{props.summary}</h6>
            <p className="author-query">{props.author}</p>

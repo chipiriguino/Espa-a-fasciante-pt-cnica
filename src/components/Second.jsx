@@ -15,7 +15,7 @@ export default function Second(props) {
   <Card.Text>
         <p className="title-card">{props.title} </p>
       </Card.Text>
-    <Card.Img variant="top" src={props.image} width="25" />
+    <Card.Img variant="top" src={props.image} alt="image" width="25" />
    
     
       <Card.Text>

@@ -6,7 +6,7 @@ export default function First(props) {
         <div>
             
         <div className="cover">
-        <div className="align-category"><h8 className="line">{props.category}  </h8><h8>{props.subcategory}</h8></div>
+        <div className="align-category"><h6 className="line">{props.category} | {props.subcategory}</h6></div>
            <h4>{props.title}</h4>
            <h6>{props.summary}</h6>
            <p className="author">{props.author}</p>

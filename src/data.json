@@ -26,7 +26,7 @@
         {
             "post_id": 2,
             "title": "Entrada categoria 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae purus lobortis",
+            "summary": "Lorem ipsum dolor sit consectetur adipiscing elit. Ut vitae purus lobortis",
             "date_post": "01/05/2021",
             "category": {
                 "id": "1",
@@ -47,7 +47,7 @@
         {
             "post_id": 3,
             "title": "Entrada categoria 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae purus lobortis",
+            "summary": "Lorem ipsum dolor sit consectetur adipiscing elit. Ut vitae purus lobortis",
             "date_post": "01/05/2021",
             "category": {
                 "id": "1",

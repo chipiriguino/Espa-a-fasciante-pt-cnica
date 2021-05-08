@@ -23,7 +23,7 @@ export default function Second() {
       </Card.Text>
       <Card.Text>
       <p className="bold">Author</p>
-          <div className="date3-align"><p>Date</p>-<p className="bold">reading</p></div>
+          <div className="date3-align"><p className="font-size cat-sub-color">Date-</p><p className="bold">reading</p></div>
           <div className="icons-third"><img src="/images/fb-black.png" width="25" alt="search" /><img  src="/images/share-red.png" width="25" alt="search" /></div>
       </Card.Text>
     

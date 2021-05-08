@@ -35,7 +35,6 @@ a:active {
 }
 
 footer {
-  margin-top: 50px;
   width: 100%;
   height: 160px;
   background-color: black;
@@ -85,6 +84,7 @@ h6{
 }
 .align-category{
   margin-bottom: 13px;
+  color: grey;
 }
 .date{
   display: flex;
@@ -148,8 +148,12 @@ h6{
   font-weight: bold;
 }
 .bold{
-  font-weight: bold;
-  color:grey
+  font-weight: 900;
+  color:grey;
+  font-size: 11px;
+}
+.font-size{
+  font-size: 11px;
 }
 .cat-sub-color{
   color: grey;
@@ -164,4 +168,23 @@ h6{
 .icons-third{
   display: flex;
   justify-content: flex-end;
+}
+.width-third-card{
+  margin-left: 2.5rem;
+  width: 80%;
+  
+}
+.card-body {
+padding:0 !important;
+}
+.cat-sub-color{
+  color: grey;
+}
+.align-fafa{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.font-title-third{
+  font-size: 24px;
 }

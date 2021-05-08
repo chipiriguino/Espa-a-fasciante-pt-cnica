@@ -4,37 +4,45 @@ import HamburgerMenu from '../src/HamburgerMenu';
 import First from './components/First';
 import Second from './components/Second';
 import Third from './components/Third';
-
+import datos from './data.json'
 class App extends React.Component {
-	constructor() {
-		super();
-		this.state = {
-			open: [false, true, false, true]
-		};
+  constructor() {
+    super();
+    this.state = {
+      open: [false, true, false, true],
+      datos: {}
+    };
   }
-	handleClick(id) {
-		let { open } = this.state;
+  componentDidMount(){
+    const losDatos = require('./data.json')
     this.setState({
-			open: [...open.slice(0, id), !open[id], ...open.slice(id + 1)]
-		});
-	}
-	render() {
-		return (
+      datos: losDatos
+    })
+  }
+  handleClick(id) {
+    let { open } = this.state;
+    this.setState({
+      open: [...open.slice(0, id), !open[id], ...open.slice(id + 1)]
+    });
+  }
+  render() {
+    console.log(this.state.datos)
+    return (
       <div>
       <nav>
-			<div>
-			  <HamburgerMenu
-		      isOpen={this.state.open[0]}
-		      menuClicked={this.handleClick.bind(this, 0)}
-		      width={32}
-					height={20}
-					strokeWidth={3}
-					rotate={0}
-		      color=' #d63384'
-					borderRadius={5}
-		      animationDuration={0.3}
-		    />
-			</div>
+      <div>
+        <HamburgerMenu
+          isOpen={this.state.open[0]}
+          menuClicked={this.handleClick.bind(this, 0)}
+          width={32}
+          height={20}
+          strokeWidth={3}
+          rotate={0}
+          color=' #D63384'
+          borderRadius={5}
+          animationDuration={0.3}
+        />
+      </div>
       <div>
       <h2>LOGO</h2>
       </div>
@@ -47,8 +55,7 @@ class App extends React.Component {
         <a href="#">CATEGORY</a>
         <a href="#">CATEGORY</a>
       </div>
-<First></First>
-
+<First title={datos.cover[0].title} summary={datos.cover[0].summary}></First>
 <p className="bottom-line">CATEGORY</p>
 <div className="align-second">
 <Second></Second>
@@ -75,8 +82,7 @@ class App extends React.Component {
         </div>
       </footer>
       </div>
-		);
-	}
+    );
+  }
 };
-
 export default App;

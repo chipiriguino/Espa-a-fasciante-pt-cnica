@@ -120,7 +120,6 @@ class App extends React.Component {
               read={datos.random[1].readtime}
             ></Third>
             </div>
-
             <div >
           </div>
         </div>

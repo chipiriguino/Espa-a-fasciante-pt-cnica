@@ -13,12 +13,18 @@ class App extends React.Component {
     };
   }
   componentDidMount() {
-    const losDatos = require("./data.json");
+    const dates = require("./data.json");
     this.setState({
-      datos: losDatos,
+      datos: dates,
     });
   }
   render() {
+    const first = datos.cover[0];
+    const second = datos.category[0];
+    const second1 = datos.category[1];
+    const second2 = datos.category[2];
+    const third = datos.random[0];
+    const third1 = datos.random[1];
     return (
       <div>
         <nav>
@@ -40,88 +46,87 @@ class App extends React.Component {
         <div className="body">
           <div className="hidden-first">
             <First
-              title={datos.cover[0].title}
-              summary={datos.cover[0].summary}
-              date={datos.cover[0].date_post}
-              author={datos.cover[0].author.name}
-              category={datos.cover[0].category.name}
-              subcategory={datos.cover[0].subcategory.name}
-              read={datos.cover[0].readtime}
+              title={first.title}
+              summary={first.summary}
+              date={first.date_post}
+              author={first.author.name}
+              category={first.category.name}
+              subcategory={first.subcategory.name}
+              read={first.readtime}
             ></First>
           </div>
           <div className="hidden">
             <FirstQ
-              image={datos.cover[0].cover_image.url}
-              title={datos.cover[0].title}
-              summary={datos.cover[0].summary}
-              date={datos.cover[0].date_post}
-              author={datos.cover[0].author.name}
-              category={datos.cover[0].category.name}
-              subcategory={datos.cover[0].subcategory.name}
-              read={datos.cover[0].readtime}
+              image={first.cover_image.url}
+              title={first.title}
+              summary={first.summary}
+              date={first.date_post}
+              author={first.author.name}
+              category={first.category.name}
+              subcategory={first.subcategory.name}
+              read={first.readtime}
             ></FirstQ>
           </div>
           <p className="bottom-line">CATEGORY</p>
 
           <div className="align-second">
             <Second
-              image={datos.category[0].cover_image.url}
-              title={datos.category[0].title}
-              summary={datos.category[0].summary}
-              date={datos.category[0].date_post}
-              author={datos.category[0].author.name}
-              cat={datos.category[0].category.name}
-              subcategory={datos.category[0].subcategory.name}
-              read={datos.category[0].readtime}
+              image={second.cover_image.url}
+              title={second.title}
+              summary={second.summary}
+              date={second.date_post}
+              author={second.author.name}
+              cat={second.category.name}
+              subcategory={second.subcategory.name}
+              read={second.readtime}
             ></Second>
             <Second
-              image={datos.category[1].cover_image.url}
-              title={datos.category[1].title}
-              summary={datos.category[1].summary}
-              date={datos.category[1].date_post}
-              author={datos.category[1].author.name}
-              cat={datos.category[1].category.name}
-              subcategory={datos.category[1].subcategory.name}
-              read={datos.category[1].readtime}
+              image={second1.cover_image.url}
+              title={second1.title}
+              summary={second1.summary}
+              date={second1.date_post}
+              author={second1.author.name}
+              cat={second1.category.name}
+              subcategory={second1.subcategory.name}
+              read={second1.readtime}
             ></Second>
             <div className="hidden">
               <Second
-                image={datos.category[2].cover_image.url}
-                title={datos.category[2].title}
-                summary={datos.category[2].summary}
-                date={datos.category[2].date_post}
-                author={datos.category[2].author.name}
-                cat={datos.category[2].category.name}
-                subcategory={datos.category[2].subcategory.name}
-                read={datos.category[2].readtime}
+                image={second2.cover_image.url}
+                title={second2.title}
+                summary={second2.summary}
+                date={second2.date_post}
+                author={second2.author.name}
+                cat={second2.category.name}
+                subcategory={second2.subcategory.name}
+                read={second2.readtime}
               ></Second>
             </div>
           </div>
           <p className="top-line">Read more</p>
           <div className="align-third">
             <Third
-              image={datos.random[0].cover_image.url}
-              title={datos.random[0].title}
-              summary={datos.random[0].summary}
-              date={datos.random[0].date_post}
-              author={datos.random[0].author.name}
-              cat={datos.random[0].category.name}
-              subcategory={datos.random[0].subcategory.name}
-              read={datos.random[0].readtime}
+              image={third.cover_image.url}
+              title={third.title}
+              summary={third.summary}
+              date={third.date_post}
+              author={third.author.name}
+              cat={third.category.name}
+              subcategory={third.subcategory.name}
+              read={third.readtime}
             ></Third>
             <Third
-              image={datos.random[1].cover_image.url}
-              title={datos.random[1].title}
-              summary={datos.random[1].summary}
-              date={datos.random[1].date_post}
-              author={datos.random[1].author.name}
-              cat={datos.random[1].category.name}
-              subcategory={datos.random[1].subcategory.name}
-              read={datos.random[1].readtime}
+              image={third1.cover_image.url}
+              title={third1.title}
+              summary={third1.summary}
+              date={third1.date_post}
+              author={third1.author.name}
+              cat={third1.category.name}
+              subcategory={third1.subcategory.name}
+              read={third1.readtime}
             ></Third>
-            </div>
-            <div >
           </div>
+          <div></div>
         </div>
         <footer>
           <h1>LOGO</h1>
